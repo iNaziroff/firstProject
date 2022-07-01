@@ -44,6 +44,7 @@ body{
   color: #ff7500;
 }
 .nav-link{
+  display: flex;
   font-weight: 500;
   font-size: 13px;
   line-height: 15px;
@@ -53,8 +54,23 @@ body{
   list-style: none;
   color: #000000;
 }
-.hero-img img{
-  border-radius: 12px;
+.site-header{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-action{
+  display: flex;
+  align-items: center;
+}
+.site-hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature-icon__list{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
 .feature-heading{
   font-family: "Roboto Condensed";
@@ -75,6 +91,19 @@ body{
   height: 100px;
   background-color: rgba(255, 117, 0, 0.2);
 }
+.site-promo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-media{
+  display: flex;
+}
 .site-footer{
   background-color: #f8f8f8;
 }
@@ -84,6 +113,10 @@ body{
 .footer-links{
   width: 224px;
   line-height: 19px;
+}
+.site-links{
+  display: flex;
+  justify-content: space-between;
 }
 .footer-links a{
   text-decoration: none;
