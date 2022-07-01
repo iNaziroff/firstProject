@@ -30,6 +30,13 @@ body{
   line-height: 15px;
   background-color: #ff7500;
   color: #ffffff;
+  transition: opacity 0.3s ease
+}
+.main-button:hover{
+  opacity: 0.8;
+}
+.main-button:active{
+  opacity: 0.6;
 }
 .section-background{
   background-color: #252420;
@@ -43,24 +50,43 @@ body{
 .highlight{
   color: #ff7500;
 }
-.nav-link{
+.site-header{
   display: flex;
+  justify-content: space-between;
+}
+.site-logo{
+  transition: opacity 0.2s ease;
+}
+.site-logo:hover{
+  opacity: 0.8;
+}
+.site-logo:active{
+  opacity: 0.7;
+}
+.nav-action{
+  display: flex;
+  align-items: center;
+}
+.nav-links{
+  display: flex;
+  list-style: none;
+}
+.nav-link{
   font-weight: 500;
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  list-style: none;
   color: #000000;
+  transition: opacity 0.3s ease, color 0.3s ease;
 }
-.site-header{
-  display: flex;
-  justify-content: space-between;
+.nav-link:hover{
+  opacity: 0.8;
+  color: #ff7500;
 }
-.nav-action{
-  display: flex;
-  align-items: center;
+.nav-link:active{
+  opacity: 0.6;
 }
 .site-hero{
   display: flex;
@@ -104,6 +130,17 @@ body{
 .social-media{
   display: flex;
 }
+.social-media a{
+  color: #000000;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+.social-media a:hover{
+  color: #ff7500;
+  opacity: 0.8;
+}
+.social-media a:active{
+  opacity: 0.6;
+}
 .site-footer{
   background-color: #f8f8f8;
 }
@@ -122,8 +159,16 @@ body{
   text-decoration: none;
   font-weight: 400;
   color: #252420;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+.footer-links a:hover{
+  color: #ff7500;
+  opacity: 0.8;
+}
+.footer-links a:active{
+  opacity: 0.6;
 }
 .footer-line{
   height: 2px;
-  background-color: rgba(37, 36, 32, 0.39);
+  background-color: rgba(37, 36, 32, 0.5);
 }
