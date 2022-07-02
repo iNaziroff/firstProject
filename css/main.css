@@ -25,12 +25,16 @@ body{
   color: #000000;
 }
 .main-button{
+  display: inline-block;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 13px;
   line-height: 15px;
   background-color: #ff7500;
   color: #ffffff;
-  transition: opacity 0.3s ease
+  transition: opacity 0.3s ease;
+  padding: 12px 24px;
+  text-decoration: none;
 }
 .main-button:hover{
   opacity: 0.8;
@@ -43,6 +47,7 @@ body{
   color: #ffffff;
 }
 .orange-line{
+  border: none;
   width: 80px;
   height: 3px;
   background-color: #ff7500;
@@ -51,17 +56,20 @@ body{
   color: #ff7500;
 }
 .site-header{
+  padding: 80px 0;
   display: flex;
   justify-content: space-between;
+  border-top: 5px solid #ff7500;
+  padding: 16px 0;
 }
 .site-logo{
   transition: opacity 0.2s ease;
 }
 .site-logo:hover{
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .site-logo:active{
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .nav-action{
   display: flex;
@@ -70,6 +78,7 @@ body{
 .nav-links{
   display: flex;
   list-style: none;
+  padding: 0;
 }
 .nav-link{
   font-weight: 500;
@@ -93,10 +102,26 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+.hero-img img{
+  border-radius: 8px;
+}
+.site-feature{
+  padding: 210px 0;
+}
 .feature-icon__list{
   display: flex;
   list-style: none;
   justify-content: space-between;
+  padding: 0;
+}
+.feature-icon__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 117, 0, 0.2);
+  border-radius: 50%;
 }
 .feature-heading{
   font-family: "Roboto Condensed";
@@ -112,15 +137,22 @@ body{
   line-height: 1.2;
   color: #000000;
 }
-.feature-icon__wrapper{
-  width: 100px;
-  height: 100px;
-  background-color: rgba(255, 117, 0, 0.2);
-}
 .site-promo{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 12px;
+}
+.promo-img img{
+  border-radius: 12px;
+}
+
+.site-footer{
+  background-color: #f8f8f8;
+  padding: 56px 0;
+}
+.site-footer ul{
+  list-style: none;
 }
 .footer-top{
   display: flex;
@@ -141,15 +173,10 @@ body{
 .social-media a:active{
   opacity: 0.6;
 }
-.site-footer{
-  background-color: #f8f8f8;
-}
-.site-footer ul{
-  list-style: none;
-}
 .footer-links{
   width: 224px;
   line-height: 19px;
+  padding: 0;
 }
 .site-links{
   display: flex;
